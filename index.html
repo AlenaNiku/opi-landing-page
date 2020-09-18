@@ -28,17 +28,23 @@
             </div>
             <ul class="switch">
                 
-                <li><img src="coca-cola-red.png" onClick="imgSlider('coca-cola-red.png')" alt="red powder"></li>
+                <li><img src="coca-cola-red.png" onClick="imgSlider('coca-cola-red.png');changeBackgroundColor('lightpink')" alt="red powder"></li>
 
-                <li><img src="hide&sea-k.png" onClick="imgSlider('hide&sea-k.png')" alt="blue powder"></li>
+                <li><img src="hide&sea-k.png" onClick="imgSlider('hide&sea-k.png');changeBackgroundColor('lightblue')" alt="blue powder"></li>
 
-                <li><img src="ink.png" onClick="imgSlider('ink.png')" alt="grey powder"></li>
+                <li><img src="ink.png" onClick="imgSlider('ink.png');changeBackgroundColor('#1e1e1e')" alt="grey powder"></li>
             </ul>
         </div>
     </section>
     <script type="text/javascript">
         function imgSlider(img) {
             document.querySelector('.red').src = img;
+        }
+
+        function changeBackgroundColor(color) {
+            const sec = document.querySelector('.sec');
+            // console.log(sec)
+            sec.style.background = color;
         }
     </script>
 </body>
