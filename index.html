@@ -27,11 +27,19 @@
                 <img src="coca-cola-red.png" class="red" alt="red powder">
             </div>
             <ul class="switch">
-                <li><img src="coca-cola-red.png" alt=""></li>
-                <li><img src="hide&sea-k.png" alt="blue powder"></li>
-                <li><img src="ink.png" alt="grey powder"></li>
+                
+                <li><img src="coca-cola-red.png" onClick="imgSlider('coca-cola-red.png')" alt="red powder"></li>
+
+                <li><img src="hide&sea-k.png" onClick="imgSlider('hide&sea-k.png')" alt="blue powder"></li>
+
+                <li><img src="ink.png" onClick="imgSlider('ink.png')" alt="grey powder"></li>
             </ul>
         </div>
     </section>
+    <script type="text/javascript">
+        function imgSlider(img) {
+            document.querySelector('.red').src = img;
+        }
+    </script>
 </body>
 </html>
