@@ -12,7 +12,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: cornflowerblue;
+    background: lightpink;
     transition: 0.5s;
 }
 
@@ -47,4 +47,25 @@ header ul li a {
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: linen;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
 }
