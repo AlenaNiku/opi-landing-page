@@ -86,3 +86,38 @@ header ul li a {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    justify-content: flex-end;
+}
+
+.content .imgBox img {
+    max-width: 460px;
+}
+
+.switch {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.switch li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.switch li:hover {
+    transform: translateY(-15px);
+}
+
+.switch li img {
+    max-width: 50px;
+}
